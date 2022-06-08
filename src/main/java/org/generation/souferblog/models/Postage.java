@@ -25,6 +25,7 @@ public class Postage {
 	@Size(max = 500)
 	private String text;
 	
+	@Size(max = 1000)
 	private String image;
 	
 	@Temporal(TemporalType.TIMESTAMP)

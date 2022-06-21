@@ -22,13 +22,13 @@ public class Postage {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;	
 	
-	@Size(max = 100)
+	@Size(max = 100, message = "The title attribute must contain a maximum of 100 characters")
 	private String title;
 	
-	@Size(max = 500)
+	@Size(max = 1000, message = "The text attribute must contain a maximum of 1000 characters")
 	private String text;
 	
-	@Size(max = 1000)
+	@Size(max = 1000, message = "The image attribute must contain a maximum of 1000 characters")
 	private String image;
 	
 	@Temporal(TemporalType.TIMESTAMP)

@@ -21,7 +21,7 @@ public class Theme {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
+	@NotNull(message = "The Description attribute is required")
 	private String description;
 	
 	@OneToMany(mappedBy = "theme", cascade = CascadeType.ALL)
